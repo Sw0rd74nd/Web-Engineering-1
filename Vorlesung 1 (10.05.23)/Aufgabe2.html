@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe2</title>
+</head>
+<body>
+    <h1>Marathon Registrierung!</h1>
+    <form action="">
+        <span>
+            <label for="name">Vorname</label>
+            <input type="text" name="name" id="name" required >
+            <label for="surname">Nachname</label>
+            <input type="text" name="surname" id="surname" required>
+        </span>
+
+        <p>Wähle die Distanz:</p>
+
+        
+        <input type="radio" id="spaßlauf" name="distanz">
+        <label for="spaßlauf">Spaßlauf</label>
+        <br>
+        <input type="radio" id="halbmarathon" name="distanz">
+        <label for="halbmarathon">Halbmarathon</label>
+        <br>
+        <input type="radio" id="marathon" name="distanz">
+        <label for="marathon">Marathon</label>
+        <br>
+
+
+        <span>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" required>
+        </span>
+        <br>
+        <span>
+            <a>Wähle dein Alter</a>   
+            <select name="age" id="age">
+                <option value="under18"> Unter 18</option>
+                <option value="18"> 18</option>
+                <option value="above18"> Über 18</option>
+            </select>
+        </span>
+        <br>
+        <button type="button">Registrieren!</button>    
+    </form>
+</body>
+</html>
