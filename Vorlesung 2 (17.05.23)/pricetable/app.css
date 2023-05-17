@@ -34,6 +34,8 @@ body {
     justify-content: center;
     border-radius: 20px;
     background-color: white;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .pricing-plan {
@@ -89,9 +91,17 @@ body {
     margin: 2em auto;
 }
 
+.pricing-button:hover {
+    background-color: var(--primary-light);
+}
+
 .pricing-button.is-featured {
     background-color: var(--primary);
     color: white;
+}
+
+.pricing-button.is-featured:hover {
+    background-color: #2e6dba;
 }
 
 @media only screen and (max-width: 700px) {
