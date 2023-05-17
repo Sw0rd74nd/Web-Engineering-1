@@ -1,0 +1,20 @@
+.dog {
+
+    width: 210px;
+    border: 1px;
+    border-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px;
+    border-color: rgb(236, 183, 191);
+    border-style: solid;
+}
+
+h1{
+    text-align: center;
+}

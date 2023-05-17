@@ -1,0 +1,112 @@
+:root {
+    --primary: #3a89e8;
+    --primary-light: #e1f1ff;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 0.98em;
+    font-family: 'Open Sans', Arial;
+    color: var(--primary);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 0 2em;
+}
+
+.panel {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.pricing-plan {
+    text-align: center;
+    padding: 1em;
+    max-width: 260px;
+}
+
+.pricing-plan:nth-of-type(2) {
+    border: none;
+    border-left: 1px solid var(--primary-light);
+    border-right: 1px solid var(--primary-light);
+}
+
+.pricing-img {
+    max-width: 100%;
+}
+
+.pricing-header {
+    color: gray;
+    font-size: 1em;
+}
+
+.pricing-features {
+    padding: 0;
+    list-style: none;
+    margin: 2em 1em;
+    font-weight: bold;
+}
+
+.pricing-price {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.pricing-features-item:first-of-type {
+    border-top: 1px solid var(--primary-light);
+}
+
+.pricing-features-item {
+    border-bottom: 1px solid var(--primary-light);
+    padding: 1em 0;
+}
+
+.pricing-button {
+    padding: 0.5em 1.8em;
+    border: 1px solid var(--primary-light);
+    color: var(--primary);
+    border-radius: 6px;
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    margin: 2em auto;
+}
+
+.pricing-button.is-featured {
+    background-color: var(--primary);
+    color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    html,
+    body {
+        background-color: white;
+    }
+
+    .panel {
+        flex-direction: column;
+    }
+
+    .pricing-plan:nth-of-type(2) {
+        border: none;
+        border-top: 1px solid var(--primary-light);
+        border-bottom: 1px solid var(--primary-light);
+    }
+}
