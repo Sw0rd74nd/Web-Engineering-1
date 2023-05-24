@@ -1,0 +1,289 @@
+*
+{
+    font-family: arial;
+    scroll-behavior: smooth;
+}
+
+body
+{    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+header
+{   
+    background-color: rgb(29, 161, 242);
+}
+
+.titel
+{
+    color: white;
+    text-align: center;
+}
+
+#content
+{
+    display: flex;
+    flex: 1;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.left
+{
+    width: 15%;  
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-end;
+    padding-top: 1em;
+}
+
+button
+{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    margin-right: 3em;
+}
+
+button:hover
+{
+    background-color: rgb(235, 235, 235);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+img
+{
+    width: 40px;
+    height: auto;    
+}
+
+.right
+{
+    width: 20%;  
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.trendbackground
+{
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 5%;
+}
+
+.trendheader
+{
+    text-align: left;
+    display: flex;
+    font-weight: bold;
+    padding: 1em;
+    font-size: 20px;
+}
+
+.trendbox
+{
+    display: flex;
+    flex-direction: column;
+    color: rgb(34, 48, 60);
+    padding: 1em;    
+}
+
+.trendbox:hover
+{
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+}
+
+.trend
+{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.trendcat
+{
+    color: rgb(136, 136, 136);
+    font-size: 13px;    
+}
+
+.wvtweets
+{
+    color:rgb(136, 136, 136);
+    font-size: 13px;    
+}
+
+.copyright
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.crtext
+{
+    color: rgb(136, 136, 136);
+    font-size: 15px;
+    padding: 0.5em;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    border-left: 1px solid rgb(167, 167, 167);
+    border-right: 1px solid rgb(167, 167, 167);
+}
+
+.timelineheader
+{
+    text-align: left;
+    display: flex;
+    font-weight: bold;
+    padding: 1em;
+    font-size: 35px;
+}
+
+.wtweet
+{
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.textfeld
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 95%;
+    gap: 1em;
+}
+
+textarea
+{   border-color: rgb(167, 167, 167);
+    width: 95%;
+    resize: none;
+    height: 150px;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+textarea:focus
+{
+    outline: none;
+}
+
+.tweetbutton
+{
+    background-color: rgb(29, 161, 242);
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 100px;
+    font-size: 20px;
+    margin-right: 0;
+    
+}
+
+.tweetbutton:hover
+{
+    cursor: pointer;
+    background-color: rgba(14, 159, 250, 0.87);
+    border-radius: 100px;
+}
+
+.tweet
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-left: 2%;
+    height: auto;
+    gap: 1em;
+}
+
+.tweetcontent
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tweet:hover
+{
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+
+.tweetundercontent
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.profilepicture
+{
+    border-radius: 20px;
+}
+.profilename
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name
+{
+    font-weight: bold;
+}
+
+.nametag
+{
+    color: rgb(136, 136, 136);
+}
+
+.tweet-buttons
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tweettext
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.garon
+{   
+    margin-top: 1em;
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}
+
+footer
+{   
+    margin-top: auto;
+    background-color: rgb(29, 161, 242);
+}
+
+h1
+{
+    color:black ;
+}
