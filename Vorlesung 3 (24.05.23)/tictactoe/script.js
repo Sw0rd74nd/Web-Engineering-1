@@ -10,12 +10,15 @@ function makeMove(index) {
     {
         board[index] = currentPlayer;
         cells[index].innerText = currentPlayer;
-        checkWin()
-        currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
-        
+        if(!checkWin())
+        {
+            currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
+        }
+        checkDraw();
     }
     
 }
+
 
 function resetGame() {
     // to be implemented
@@ -42,7 +45,17 @@ function checkWin(){
         (board[2] === board[4] && board[4] === board[6] && board[6] === currentPlayer)
         ){
             
-            alert('The Player ' + currentPlayer + ' wins!!')
+            setTimeout(() => {  alert('The Player ' + currentPlayer + ' wins!!'); }, 10);
+            setTimeout(() => { resetGame(); }, 10);   
+            return true;
+    }
+
+}
+
+function checkDraw() {
+    if(!board.includes('')){
+        setTimeout(() => {  alert('ITS A DRAW'); }, 10);
+        setTimeout(() => { resetGame(); }, 10);  
     }
 
 }
