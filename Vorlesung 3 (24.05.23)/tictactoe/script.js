@@ -39,8 +39,8 @@ function checkWin() {
         (board[2] === board[4] && board[4] === board[6] && board[6] === currentPlayer)
     ) {
 
-        setTimeout(() => { alert('The Player ' + currentPlayer + ' wins!!'); }, 10);
-        setTimeout(() => { resetGame(); }, 10);
+        setTimeout(() => { alert('The Player ' + currentPlayer + ' wins!!'); }, 100);
+        setTimeout(() => { resetGame(); }, 100);
         return true;
     }
     else {
@@ -50,8 +50,8 @@ function checkWin() {
 
 function checkDraw() {
     if (!board.includes('') && !checkWin()) {
-        setTimeout(() => { alert('ITS A DRAW'); }, 10);
-        setTimeout(() => { resetGame(); }, 10);
+        setTimeout(() => { alert('ITS A DRAW'); }, 100);
+        setTimeout(() => { resetGame(); }, 100);
     }
 
 }
