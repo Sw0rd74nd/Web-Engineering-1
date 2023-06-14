@@ -9,6 +9,16 @@ function getRepos() {
         headers: {
             'Authorization': 'Bearer ' + token
         }
+    }
+    ).then(res =>{
+
+        if(res.ok){
+            document.getElementById('message').innerHTML = "Success!"
+            return res;
+        }
+        else{
+            throw("Unable to fetch data");
+        }
     })
         .then(res => res.json())
         .then(res => {
@@ -18,7 +28,7 @@ function getRepos() {
                 li.innerText = element.name;
                 ul.appendChild(li);
             });
-        })
+        }).catch(err => document.getElementById('message').innerHTML = "Error: " + err);
         
     }
 
