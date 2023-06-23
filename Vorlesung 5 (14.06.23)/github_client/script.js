@@ -10,14 +10,14 @@ function getRepos() {
             'Authorization': 'Bearer ' + token
         }
     }
-    ).then(res =>{
+    ).then(res => {
 
-        if(res.ok){
+        if (res.ok) {
             document.getElementById('message').innerHTML = "Success!"
             return res;
         }
-        else{
-            throw("Unable to fetch data");
+        else {
+            throw ("Unable to fetch data");
         }
     })
         .then(res => res.json())
@@ -29,6 +29,6 @@ function getRepos() {
                 ul.appendChild(li);
             });
         }).catch(err => document.getElementById('message').innerHTML = "Error: " + err);
-        
-    }
+
+}
 
