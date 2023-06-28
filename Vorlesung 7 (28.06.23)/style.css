@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(231, 170, 170);
+}
+
+#news {
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(147, 147, 221);
+}
+
+#contact {
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(159, 225, 159);
+}
+
+#about {
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(231, 231, 144);
+}
